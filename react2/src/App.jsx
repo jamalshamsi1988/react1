@@ -1,12 +1,14 @@
-import Header from "./assets/Header"
-import Test from "./Test"
+import Counter from "./Counter"
+import Header from "./Header"
+// import Test from "./Test"
 
 function App() {
 
   return (
     <>
  {/* <Test/> */}
-<Header/>
+{/* <Header/> */}
+<Counter/>
  
 
     </>

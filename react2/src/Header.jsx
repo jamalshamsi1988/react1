@@ -2,7 +2,7 @@
 
 const Header = () => {
     // const isLogedin=false;
-    const courses=[{id:1,title:"Javascript"},{id:2,title:"Javascript"},{id:3,title:"Javascript"},{id:4,title:"Javascript"},{id:5,title:"Javascript"}];
+    const courses=[{id:1,title:"Javascript"},{id:2,title:"React"},{id:3,title:"Next"},{id:4,title:"Javascript2"},{id:5,title:"Javascript3"}];
 
 //     if(isLogedin){
 //         return <button>Dashbord</button>
