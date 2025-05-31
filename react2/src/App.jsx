@@ -11,8 +11,8 @@ function App() {
  {/* <Test/> */}
 {/* <Header/> */}
 {/* <Counter/> */}
-{/* <Form/> */}
- <Form2/>
+<Form/>
+ {/* <Form2/> */}
 
     </>
   )
