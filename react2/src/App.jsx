@@ -1,4 +1,6 @@
 import Counter from "./Counter"
+import Form from "./Form"
+import Form2 from "./Form2"
 import Header from "./Header"
 // import Test from "./Test"
 
@@ -8,8 +10,9 @@ function App() {
     <>
  {/* <Test/> */}
 {/* <Header/> */}
-<Counter/>
- 
+{/* <Counter/> */}
+{/* <Form/> */}
+ <Form2/>
 
     </>
   )
