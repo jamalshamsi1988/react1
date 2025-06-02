@@ -1,0 +1,15 @@
+/* .container{
+    border:1px red solid;
+    margin: 10px;
+    padding: 10px;
+} */
+.select{
+    border: 5px green dashed;
+    background-color: blue;
+}
+li{
+     border:2px red solid;
+    margin: 10px;
+    padding: 10px;
+
+}

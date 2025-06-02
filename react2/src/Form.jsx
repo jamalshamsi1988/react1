@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import styles from "./Form.module.css"
+import Header from './Header'
 
 const Form = () => {
 
@@ -53,8 +55,9 @@ const changeHandler=(e)=>{
 
         console.log(form)
     }
+    console.log(styles)
   return (
-    <div>
+    <div className={styles.container }>
         <form onSubmit={submitHandler}>
 
         <input type="text" placeholder='Name' name='name' value={form.name} onChange={changeHandler} />
@@ -75,8 +78,9 @@ const changeHandler=(e)=>{
         </select>
 
     <input type="checkbox" name='rules' checked={form.rules} onChange={changeHandler} />
-        <button type='submit' > Send </button>
+        <button type='submit' className={styles.button} > Send </button>
       </form>
+      <Header />
     </div>
   )
 }
