@@ -1,9 +1,22 @@
-import { useState } from "react";
-import "./Header.css"
+import { useState } from 'react';
+import styled from 'styled-components'
+// import "./Header.css"
+
+const Div = styled.div `
+color:${(props)=>(props.selected ? "blue" : "gold")};
+background-color: gold;
+/* &:hover{
+    color: red;
+} */
+@media (max-width:1200px){
+    background-color: aqua;
+    
+}
+`;
+
 
 const Header = () => {
-
-    const [selected,setSelected]=useState(true)
+    const[selected,setSelected]=useState(true)
     // const isLogedin=false;
     const courses=[{id:1,title:"Javascript"},{id:2,title:"React"},{id:3,title:"Next"},{id:4,title:"Javascript2"},{id:5,title:"Javascript3"}];
 
@@ -26,12 +39,11 @@ const Header = () => {
 
 return(
     // <div className={`container ${selected && "select"}`}>
-    <div style={{color:selected ? "green" : "red"}}>
-
+    // <div style={{color:selected ? "green" : "red"}}>
+    <Div selected={selected}>
 <ul>
-
 {
-    courses.map((i)=>
+ courses.map((i)=>
    
     <li key={i.id}>{i.title}</li>
     )
@@ -46,7 +58,7 @@ return(
        {
         isLogedin && <h1>Hello</h1>
        } */}
-    </div>
+    </Div>
 )
 
  

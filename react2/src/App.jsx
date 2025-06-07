@@ -9,9 +9,9 @@ function App() {
   return (
     <>
  {/* <Test/> */}
-{/* <Header/> */}
+<Header/>
 {/* <Counter/> */}
-<Form/>
+{/* <Form/> */}
  {/* <Form2/> */}
 
     </>
