@@ -1,3 +1,4 @@
+import Parent from "./components/Parent"
 import Counter from "./Counter"
 import Form from "./Form"
 import Form2 from "./Form2"
@@ -9,10 +10,11 @@ function App() {
   return (
     <>
  {/* <Test/> */}
-<Header/>
+{/* <Header/> */}
 {/* <Counter/> */}
 {/* <Form/> */}
- {/* <Form2/> */}
+      {/* <Form2/> */}
+      <Parent/>
 
     </>
   )
