@@ -1,3 +1,4 @@
+import Effct from "./components/Effct"
 import Parent from "./components/Parent"
 import StyledComponent from "./components/StyledCopmonent"
 import Counter from "./Counter"
@@ -10,16 +11,17 @@ function App() {
 
   return (
     <>
-    <StyledComponent>
+    {/* <StyledComponent> */}
 
  {/* <Test/> */}
 {/* <Header/> */}
 {/* <Counter/> */}
 {/* <Form/> */}
       {/* <Form2/> */}
-      <Parent/>
+      {/* <Parent/> */}
 
-    </StyledComponent>
+    {/* </StyledComponent> */}
+    <Effct/>
     </>
   )
 }
