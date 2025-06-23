@@ -1,4 +1,5 @@
 import Parent from "./components/Parent"
+import StyledComponent from "./components/StyledCopmonent"
 import Counter from "./Counter"
 import Form from "./Form"
 import Form2 from "./Form2"
@@ -9,6 +10,8 @@ function App() {
 
   return (
     <>
+    <StyledComponent>
+
  {/* <Test/> */}
 {/* <Header/> */}
 {/* <Counter/> */}
@@ -16,6 +19,7 @@ function App() {
       {/* <Form2/> */}
       <Parent/>
 
+    </StyledComponent>
     </>
   )
 }
