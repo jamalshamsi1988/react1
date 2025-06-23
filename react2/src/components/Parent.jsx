@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import ChildA from './ChildA'
 import ChildB from './ChildB'
+import StyledComponent from './StyledCopmonent'
 
 const Parent = () => {
     const [number, setNumber] = useState(0)
@@ -8,7 +9,7 @@ const Parent = () => {
     const changeHandler=()=>setNumber(number=>number+1)
 
   return (
-    <div style={{border:"1px solid black" , padding:"10px", margin:"20px" }}>
+    <div>
           <h1>Parent :{ number}</h1>
           <ChildA number={number} changeHandler={changeHandler} />
           <ChildB number={number} button={<button onClick={()=>setNumber(number=>number+1)}> B +</button>} />
