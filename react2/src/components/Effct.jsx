@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
+import Counter from "./Counter";
 
 
 const Effct = () => {
     const [data,setData]=useState([]);
     const [error,setError]=useState(false)
+    const [id,setId]=useState("")
     
 
 useEffect(()=>{
@@ -13,9 +15,11 @@ useEffect(()=>{
     // console.log("render")
     const fectchData=async()=>{
         try {
-            const res=await fetch('https://jsonplaceholde.typicode.com/posts');
+            const res=await fetch(`https://jsonplaceholder.typicode.com/posts`);
              const req=await res.json();
              setData(req)
+             console.log(req)
+             console.log(id)
         } catch (error) {
             // console.log("somthing went wrong",error)
             setError(error)
@@ -32,11 +36,20 @@ useEffect(()=>{
 // useEffect(()=>{
 
 // },[])
-
+const searchId=async()=>{
+    const  res=await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+    const req=await res.json();
+    console.log(req)
+}
 
   return (
     <div>
+        {id > 100 && <Counter/>}
         {!data.length && <h1>Loading...</h1>}
+
+    <input type="text" placeholder="ID" value={id} onChange={e=>setId(e.target.value)} />
+    <button onClick={searchId}>Search</button>
+
         <ul>
 
     {
